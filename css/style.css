@@ -8,7 +8,7 @@ rgba(255, 255, 255, 0.6); футер ссылки
 #2F303A цвет футера */
 *,
 *::before,
-*::after{
+*::after {
   margin: 0;
   padding: 0;
 }
@@ -105,11 +105,24 @@ button {
 .address-list-item:not(:last-child) {
   margin-right: 50px;
 }
+.icon-address-list {
+  fill: var(--primary-text-color);
+  margin-right: 10px;
+}
+.icon-address-list:hover,
+.icon-address-list:focus {
+  fill: var(--accent-color);
+}
 /*hero*/
 .hero-section {
   max-width: 1600px;
   height: 600px;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../image/hero/hero.jpg);
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../image/hero/hero.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -156,10 +169,10 @@ button {
   position: absolute !important;
   clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
   clip: rect(1px, 1px, 1px, 1px);
-  padding:0 !important;
-  border:0 !important;
-  height: 1px !important; 
-  width: 1px !important; 
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
   overflow: hidden;
 }
 .advantages-list {
@@ -174,7 +187,7 @@ button {
   min-width: 270px;
   background-repeat: no-repeat;
   background-position: center;
-  background-color: #F5F4FA;
+  background-color: #f5f4fa;
   border-radius: 4px;
   margin-bottom: 30px;
 }
@@ -218,6 +231,7 @@ button {
   color: var(--title-text-color);
   margin: 0;
   margin-bottom: 50px;
+  padding-top: 94px;
 }
 .doing-list {
   padding-bottom: 94px;
@@ -231,9 +245,6 @@ button {
   margin-right: 30px;
 }
 /*our comand*/
-.title-comand {
-  padding-top: 94px;
-}
 .comand-section {
   background-color: #f5f4fa;
 }
@@ -259,6 +270,7 @@ button {
   text-align: center;
   letter-spacing: 0.03em;
   margin: 0;
+  margin-bottom: 16px;
 }
 .comand-list-item {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -269,6 +281,46 @@ button {
 }
 .comand-list-item:not(:last-child) {
   margin-right: 30px;
+}
+.social-list {
+  display: flex;
+}
+.social-list-item:not(:last-child) {
+  margin-right: 10px;
+}
+.social-list-link {
+  width: 44px;
+  height: 44px;
+}
+/* Regular clients */
+.clients-list {
+  display: flex;
+  padding-bottom: 94px;
+}
+.clients-list-item:not(:last-child) {
+  margin-right: 30px;
+}
+.clients-list-link {
+  display: inline-block;
+  width: 170px;
+  height: 90px;
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.clients-list-link:hover,
+.clients-list-link:focus {
+  border-color: var(--accent-color);
+}
+.icon-clients {
+  fill: #afb1b8;
+}
+.icon-clients:hover,
+.icon-clients:focus {
+  fill: var(--accent-color);
 }
 /*footer*/
 .footer {
@@ -313,7 +365,7 @@ button {
 }
 /*Portfolio*/
 .portfolio {
-  border: 1px solid #ECECEC;
+  border: 1px solid #ececec;
 }
 .buttom-list {
   display: flex;

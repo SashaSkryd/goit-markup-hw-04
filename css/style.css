@@ -78,6 +78,9 @@ button {
 .link-header:focus {
   color: var(--accent-color);
 }
+.header-list-item .current {
+  color: var(--accent-color);
+}
 .header-list {
   display: flex;
   padding-top: 32px;
